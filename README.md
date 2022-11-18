@@ -26,9 +26,23 @@ Deployed website can be viewed [here]().
 ## Scope Plane
 
 ### **Existing Features**
-
+- Game is styled in a fun, exciting and user friendly way
+- Game name is displayed and intro message
+- Easy navigation around the site allows for a positive user experience
+- Home page displays 'Login' and 'How to Play' buttons
+- 'How to Play' button opens a modal, which explains the aim of the game to the player
+- Login functionality allows users to login to play the game
+- Once users logged in, 'Start Game' button displayed, which allows users to play the game
+- Play button for each question to play music
+- Clue buttons allow player to reveal a clue to help them guess the answer
+- Exit/ Home button displayed so players can leave the game at any time
+- At the end of the game, after 10 questions, the players score is diplayed
 
 ### **Features Left to Implement**
+- Logged in users are able to view a history of their score
+- Leaderboard displayed of the top 10 scores from all players
+- Clock countdown displayed per question to add a pressure element to the game
+- Additional levels added to allow players to play easy, medium or hard to test their musical ears.
 
 ## Structure Plane 
 
