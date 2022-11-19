@@ -1,9 +1,35 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static '/css/game.css' %}">
+{% endblock %}
+
 {% block content %}
 
-
+<div class="container">
+    <div class="row h-100">
+        <div class="col-6 offset-3 align-self-center text-center">
+            {% for q in questions %}
+                <div>
+                    <h1>Can you Clue the Music?</h1>
+                    <img src="{{ q.image.url }}">
+                    <button class="btn btn-info">Play me</button>
+                    <div>
+                        <button class="btn btn-info">Clue 1</button>
+                        <p class="hide">{{ q.clue1 }}</p>
+                        <button class="btn btn-info">Clue 2</button>
+                        <p class="hide">{{ q.clue2 }}</p>
+                    </div>
+                    
+                    <input type="text">
+                </div>
+            {% endfor %}
+            
+        </div>
+    </div>
+   
+</div>
 {% endblock %}
 
 {% block postloadjs %}
