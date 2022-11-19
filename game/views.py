@@ -1,6 +1,10 @@
 from django.shortcuts import render
 from django.db import models
 
+def game(request):
+    template_name = 'game/game.html'
+    context = {}
+    return render(request, template_name, context)
 
 def home(request):
     if request.method == 'POST':
@@ -23,6 +27,7 @@ def home(request):
             else:
                 wrong += 1
         percent = score/(total*10) * 100
+        template_name = 'game/game.html'
         context = {
             'score': score,
             'time': request.POST.get('timer'),
@@ -31,10 +36,11 @@ def home(request):
             'percent': percent,
             'total': total
         }
-        return render(request, '', context)
+        return render(request, template_name, context)
     else:
         questions = Question.objects.all()
+        template_name = 'game/game.html'
         context = {
             'questions': questions
         }
-        return render(request, '', context)
+        return render(request, template_name, context)
