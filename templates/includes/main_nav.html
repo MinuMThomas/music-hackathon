@@ -15,13 +15,18 @@
 
     <!-- <span class="hamburger"></span> -->
 
-    <ul class="nav  d-none d-md-flex list-inline list-unstyled text-center">
+    <ul class="nav  d-md-flex list-inline list-unstyled text-center">
 
 
         {% if request.user.is_authenticated %}
+        {% if request.user.is_superuser %}
+        <li class="list-inline-item me-2">
+            <a class="text-decoration-none" href="">Management</a>
+        </li>
+        {% endif %}
         
         <li class="list-inline-item me-2">
-            <p>{{reqest.user}}</p>
+            <p>{{user.username}}</p>
         </li>
         {% else %}
         <li class="list-inline-item me-2">

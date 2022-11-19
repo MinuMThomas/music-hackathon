@@ -76,7 +76,8 @@
 }
 .headding {
     font-family: 'Rubik Distressed', cursive, sans-serif;
-    font-size: 100px;
+    /* font-size: 100px; */
+    font-size: clamp(4.8rem, 2.5vw, 5.1rem) !important;
     color: brown;
     margin: 50px;
 
