@@ -1,6 +1,8 @@
 # Clue the Music!
 
+
 ![Mock-up of site]()
+
 
 If you love music and games then this is the one for you! Test your listening skills and get as many points as possibly by guessing the song or instrument with as little help as you can. The less clues the more points you keep. Can you Clue the Music? 
 
