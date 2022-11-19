@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik+Distressed&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(150, 11, 46);
+}
+/* -----------------------navbar styling------------------------ */
+.hamburger {
+   
+    position: relative;
+    margin-right: 20px;
+    margin-left: 20px;
+    z-index: 999999999999;
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    cursor: pointer;
+    width: 2em;
+    height: 3px;
+    background-color: #000;
+    transition: transform 250ms ease-in-out; 
+    /* z-index: 999999999999999999999999; */
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    /* left: 20px; */
+}
+.hamburger::before {
+    bottom: 6px;
+}
+.hamburger::after {
+    top: 6px;
+}
+
+/* ---------------------Indexhtml Style----------------- */
+
+.bg-yellow {
+    background-color: #FFC600;
+
+}
+ .hero {
+    /* height: 100vh; */
+    /* position: relative; */
+ }
+ .hero-text {
+    position: absolute;
+    bottom: 35%;
+    /* left: 15%; */
+ }
+.hero-div {
+ height: 100vh;
+ position: relative;
+
+}
+.headding {
+    font-family: 'Rubik Distressed', cursive, sans-serif;
+    font-size: 100px;
+    color: brown;
+    margin: 50px;
+
+}
