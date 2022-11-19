@@ -127,6 +127,9 @@ For more information on troubleshooting see the GitHub documentation [here](http
 
 
 ### Code Content
+- [Stack Overflow](https://stackoverflow.com/questions/22766719/stop-audio-after-x-seconds-in-js) used in JavaScript to play audio files
+- [Stack Overflow](https://stackoverflow.com/questions/27474321/how-to-shuffle-list-in-django-views-py) used in shuffling songs
+
 
 
 
