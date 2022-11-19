@@ -4,7 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    color: rgb(150, 11, 46);
+    /* color: rgb(150, 11, 46); */
 }
 /* -----------------------navbar styling------------------------ *
 /* new svg nav */
@@ -19,6 +19,8 @@
   }
   .offcanvas {
     height: 100vh  !important;
+    background-color: #e6c315;
+    color: #FFF;
   }
 
 
@@ -76,14 +78,23 @@
 .hero-div {
  height: 100vh;
  position: relative;
+ background-image: url("/media/Cello-Music.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 .headding {
     font-family: 'Rubik Distressed', cursive, sans-serif;
     /* font-size: 100px; */
     font-size: clamp(4.8rem, 2.5vw, 5.1rem) !important;
-    color: brown;
+    color: rgb(19, 69, 131);
     margin: 50px;
+    text-shadow: 2px 2px #FFF;
+
+}
+.small-txt {
+  text-shadow: 1px 1px rgb(123, 74, 9);
 
 }
 /* p {
