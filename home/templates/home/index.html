@@ -1,1 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<!-- nav-bar -->
+<nav class="navbar fixed-top bg-warning">
+    {% include 'includes/main_nav.html' %}
+</nav>
+
+<!-- Hero pages -->
 <h1>Ctrl-alt-Elites</h1>
+
+
+<!-- footer  -->
+{% include 'includes/footer.html' %}
+{% endblock %}
+
+{% block postloadjs %}
+{{block.super}}
+<script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
+{% endblock %}
