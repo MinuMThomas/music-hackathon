@@ -10,6 +10,7 @@ Deployed website can be viewed [here]().
 
 ## Project Goals
 
+'Clue the Music' has been developed as part of the Code Institute Hackathon Hero: A music themed game creation challenge. This is a Django based project with a sqlite database, alongside HTML, CSS and JavaScript. We worked together to create something fun for people to play! 
 
 ## UX Design
 
@@ -59,6 +60,7 @@ Deployed website can be viewed [here]().
 ### Colour Scheme
 
 ### Images
+Images were chosen from album covers to give a visual prompt for players and add to the overall aethestic of the game. 
 
 ### Typography
 
