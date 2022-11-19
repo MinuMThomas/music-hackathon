@@ -1,108 +1,140 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Clue the Music!
 
-Welcome SamuelUkachukwu,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Mock-up of site]()
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
+If you love music and games then this is the one for you! Test your listening skills and get as many points as possibly by guessing the song or instrument with as little help as you can. The less clues the more points you keep. Can you Clue the Music? 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Deployed website can be viewed [here]().
 
-`python3 -m http.server`
+## Project Goals
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+## UX Design
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Strategy Plane
 
-A blue button should appear to click: _Make Public_,
+### Site Owner Goals
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Demograghic
+- Everyone with an interest or love for music
+- All ages and demographics
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### User Stories
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Scope Plane
 
-------
+### **Existing Features**
+- Game is styled in a fun, exciting and user friendly way
+- Game name is displayed and intro message
+- Easy navigation around the site allows for a positive user experience
+- Home page displays 'Login' and 'How to Play' buttons
+- 'How to Play' button opens a modal, which explains the aim of the game to the player
+- Login functionality allows users to login to play the game
+- Once users logged in, 'Start Game' button displayed, which allows users to play the game
+- Play button for each question to play music
+- Clue buttons allow player to reveal a clue to help them guess the answer
+- Exit/ Home button displayed so players can leave the game at any time
+- At the end of the game, after 10 questions, the players score is diplayed
 
-## Release History
+### **Features Left to Implement**
+- Logged in users are able to view a history of their score
+- Leaderboard displayed of the top 10 scores from all players
+- Clock countdown displayed per question to add a pressure element to the game
+- Additional levels added to allow players to play easy, medium or hard to test their musical ears.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Structure Plane 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Database
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+## Skeleton Plane
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Wireframes
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+## Surface Plane
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Colour Scheme
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Images
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Typography
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Technologies
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Languages
+- HTML
+- CSS3
+- JavaScript
+- Python
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Frameworks and Libraries
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- [Am I Responsive?](http://ami.responsivedesign.is/) was used to create the mock ups.
+- [Font Awesome](https://fontawesome.com/) was used for button icons.
+- Git was used for version control ad to push code to GitHub.
+- [GitHub](https://github.com/) was used to store the repository.
+- [GitPod](https://www.gitpod.io/) was used as the IDE to develop the project.
+- [Google Fonts](https://fonts.google.com/) were used to select fonts for the site.
+- [Heroku](https://www.heroku.com/) used to deploy the site.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Challenges
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Testing
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Deployment
 
-------
+### Creation
+* Following logging into my GitHub account, I created the repository from Code Institute's Gitpod Template. Selected 'Use this template', filled in repository name and created repository.
 
-## FAQ about the uptime script
+### Forking
+* Sign into your GitHub account and go to this [repository](). 
+* In the top right there are several options, including 'fork'. Select this to fork the repository.
 
-**Why have you added this script?**
+### Cloning
+* Sign into your GitHub account and go to this [repository](). In addition to the cloning steps you will need to follow steps for setting up AWS, Stripe and Heroku.
+* Clone using command line
+    - Select button 'Code' next to Gitpod button and copy the URL
+    - In your workspace terminal type 'git clone' followed by the URL and press enter
+* Clone using Desktop GitHub
+    - If you select this, it will guide you through the necessary steps
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+For more information on troubleshooting see the GitHub documentation [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#about-cloning-a-repository).
 
-**How will this affect me?**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Heroku Deployment
+* Firstly login into your [Heroku](https://id.heroku.com/login) account.
+* Select 'New' and then 'Create New App', give it a name and select closest region and click 'Create App'.
+* In Resources under Add-ons select 'Heroku Postgres'
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+* Once the app is created, go to settings and reveal Confif Vars and add the following:
+    * Note: the DATABASE_URL was already populated, USE_AWS is set to True and the AWS_SECRET_KEY was generated using the Django Secret Key Generator. 
 
-**So….?**
+* Go to 'Deploy' and select 'Heroku Git'. Currently Heroku has stopped automatic deploys with GitHub
+* Once deployed commits need to be manually pushed to both GitHub and Heroku. Using the command git push heroku main will push to Heroku
+* You will need to migrate and create a superuser. Migrations can be done with the previous steps with 'heroku run' infront. E.g heroku run python3 manage.py makemigrations.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+## Credits
 
-**Anything more?**
+### Content
+- README structure and basic layout used from [Surf the Wave](https://github.com/anyahush/surf-the-wave).
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
----
+### Code Content
 
-Happy coding!
+
+
+
+### Images
+
+
+## Acknowledegments
+
+
+
