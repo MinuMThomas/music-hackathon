@@ -8,19 +8,22 @@
 }
 /* -----------------------navbar styling------------------------ */
 .hamburger {
-    display: block;
-    cursor: pointer;
+   
     position: relative;
     margin-right: 20px;
     margin-left: 20px;
+    z-index: 999999999999;
 }
 .hamburger,
 .hamburger::before,
 .hamburger::after {
+    display: block;
+    cursor: pointer;
     width: 2em;
     height: 3px;
     background-color: #000;
-    transition: transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out; 
+    /* z-index: 999999999999999999999999; */
 }
 .hamburger,
 .hamburger::before,
