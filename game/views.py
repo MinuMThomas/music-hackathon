@@ -1,9 +1,12 @@
+import random
 from django.shortcuts import render
 from django.db import models
 from .models import Question
 
+
 def game(request):
-    questions = Question.objects.all()
+    questions = list(Question.objects.all())[:10]
+    random.shuffle(questions)
     # if request.method == 'POST':
     #     print(request.POST)
     #     questions = Question.objects.all()
