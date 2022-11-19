@@ -14,8 +14,8 @@
             <div>
                 <h1>Can you Clue the Music?</h1>
                 <img src="{{ q.image.url }}">
-                <button class="btn btn-info">Play me</button>
-                
+                <audio id="audioFile" src="{{ q.audio_file.url }}" preload="auto"></audio>
+                <button id="playButton" class="btn btn-info">Play</button>
                 <div>
                     <button id="clueOneButton" class="btn btn-info">Clue 1</button>
                     <p id="clueOne" class="hide">{{ q.clue1 }}</p>
