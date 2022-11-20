@@ -1,45 +1,36 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block content %}
 <!-- nav-bar -->
-<nav class="navbar fixed-top bg-yellow">
-    {% include 'includes/main_nav.html' %}
+<nav class="navbar fixed-top ">
+  {% include 'includes/main_nav.html' %}
 </nav>
-
 <!-- Hero pages -->
 <section class="container-fluid hero m-0 p-0 ">
-    <div class="row m-0 p-0 ">
-        <div class="col-12 col-md-10 col-lg-8 m-auto hero-div m-0 p-0 ">
-            <div class="hero-text">
-                <h1 class="headding">Clue the Music</h1> <a href="{% url 'game' %}">Go to game</a>
-            </div>
-        </div>
-    </div>
-</section>
-<!------------------------ off canvas menu ---------------------------->
-
-  
-  <div  class="offcanvas offcanvas-bottom"  id="offcanvasBottom"  tabindex="-1"  aria-labelledby="staticBackdropLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
-      <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
-    </div>
-    <div class="offcanvas-body">
-      <div>
-        I will not close if you click outside of me.
+  <div class="row m-0 p-0 ">
+    <div class="col-12 col-md-10 col-lg-8 m-auto hero-div m-0 p-0 ">
+      <div class="hero-text text-center m-0 p-0">
+        <h1 class="headding my-3 mx-0 text-center px-4">Clue the Music</h1>
+        {% if request.user.is_authenticated %}
+        <span class="play-btn p-3 bg-red rounded-2 mt-3">
+          <a href="{% url 'game' %}" class="btn play-btn bg-yellow rounded-2"><strong>PLAY GAME</strong></a>
+          <a class="text-decorations-none"  data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#"> <span class="border-0" data-bs-toggle="tooltip" data-bs-placement="right"
+              data-bs-title="GAME INSTRUCTIONS" ><i class="fa-regular fa-circle-question" ></i></span></a>
+          </span>
+        {% else %}
+        <p class="fs-5 mt-4 text-white fw-bold small-txt text-center px-4">Have you got what it take to clue the music ? Login to Play. </p>
+        {% endif %}
       </div>
     </div>
   </div>
-
+</section>
 <!-- footer  -->
 {% include 'includes/footer.html' %}
 {% endblock %}
-
 {% block postloadjs %}
 {{block.super}}
 <script>
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 </script>
 {% endblock %}
