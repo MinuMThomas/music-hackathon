@@ -72,9 +72,12 @@ As a player:
 ### Colour Scheme
 
 ### Images
-Images were chosen from album covers to give a visual prompt for players and add to the overall aethestic of the game. 
+The landing page image and graphics of the guitar and musical score are in keeping with the music theme and provide an eye-catching design for the user. 
+
+There were selected from...
 
 ### Typography
+'Rubik Distressed' was chosen as the title font on the landing page. It is a fun font, that is inviting for the user. 'Poppins' was chosen as the font for the rest of the site, as it is an easy-to-read font, making sure it is clear for the user. Both fonts were chosen using [Google Fonts](https://fonts.google.com/).
 
 ## Technologies
 
@@ -87,7 +90,6 @@ Images were chosen from album covers to give a visual prompt for players and add
 ### Frameworks and Libraries
 
 - [Am I Responsive?](http://ami.responsivedesign.is/) was used to create the mock ups.
-- [Font Awesome](https://fontawesome.com/) was used for button icons.
 - Git was used for version control ad to push code to GitHub.
 - [GitHub](https://github.com/) was used to store the repository.
 - [GitPod](https://www.gitpod.io/) was used as the IDE to develop the project.
