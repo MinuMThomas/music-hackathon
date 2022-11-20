@@ -15,7 +15,7 @@
             <h2>Can you Clue the Music?</h2>
         </div>
         <div class="col-12 col-md-6">
-            <h2 class="text-end">Score: 00:00</h2>
+            <h2 class="text-end">Score: {{ score }}</h2>
         </div>
     </div>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
@@ -35,55 +35,61 @@
                 </div>
 
                 <!-- card front  -->
-                <div class="card-front">
-                    <audio id="audioFile" src="{{ q.audio_file.url }}" preload="auto"></audio>
-                    <div class="p-3">
-                        <button id="playButton" class="btn btn-info btn-game">PLAY MUSIC</button>
-                    </div>
-                    <div class="card-body">
-                        <div class="d-flex justify-content-evenly mb-3">
-
-                            <button id="clueOneButton" class="btn btn-info p-2">Clue 1</button>
-                            <p id="clueOne" class="hide">{{ q.clue1 }}</p>
-                            <button id="clueTwoButton" class="btn btn-info p-2">Clue 2</button>
-                            <p id="clueTwo" class="hide">{{ q.clue2 }}</p>
+                
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <div class="card-front">
+                        <audio id="audioFile" src="{{ q.audio_file.url }}" preload="auto"></audio>
+                        <div class="p-3">
+                            <button id="playButton" class="btn btn-info btn-game">PLAY MUSIC</button>
                         </div>
-                        <div class="my-2">
-                            <form action="" method="post">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-evenly mb-3">
+
+                                <button id="clueOneButton" class="btn btn-info p-2">Clue 1</button>
+                                <p id="clueOne" class="hide">{{ q.clue1 }}</p>
+                                <button id="clueTwoButton" class="btn btn-info p-2">Clue 2</button>
+                                <p id="clueTwo" class="hide">{{ q.clue2 }}</p>
+                            </div>
+                            <div class="my-2">
+                                <div class="form-group">
+                                    <label class="hide" for="question">{{q.name}}</label>
+                                </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="answer" id="choice1">
+                                    <input class="form-check-input" type="radio" name="{{ q.name}}" id="choice1" value="{{ q.answer_option1 }}">
                                     <label class="form-check-label" for="choice1">
                                         {{ q.answer_option1 }}
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="answer" id="choice2">
+                                    <input class="form-check-input" type="radio" name="{{ q.name }}" id="choice2" value="{{ q.answer_option2 }}">
                                     <label class="form-check-label" for="choice2">
                                         {{ q.answer_option2 }}
 
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="answer" id="choice3">
+                                    <input class="form-check-input" type="radio" name="{{ q.name }}" id="choice3" value="{{ q.answer_option3 }}">
                                     <label class="form-check-label" for="choice3">
                                         {{ q.answer_option3 }}
 
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="answer" id="choice4">
+                                    <input class="form-check-input" type="radio" name="{{ q.name }}" id="choice4" value="{{ q.answer_option4 }}">
                                     <label class="form-check-label" for="choice4">
                                         {{ q.answer_option4 }}
 
                                     </label>
                                 </div>
                                 <div class="mt-2">
-                                    <input class="btn btn-info p-2 btn-game" type="submit" value="ANSWER">
+                                    <input class="btn btn-info p-2 btn-game" type="submit">
                                 </div>
-                            </form>
+                                
+                            </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
         {% endfor %}
