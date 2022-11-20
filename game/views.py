@@ -6,6 +6,7 @@ from .models import Question
 
 def game(request):
     if request.method == 'POST':
+        print(request.POST)
         questions = list(Question.objects.all())[:10]
         random.shuffle(questions)
         clueOne = Question.clue1
@@ -16,6 +17,8 @@ def game(request):
         total = 0
         for q in questions:
             total += 1
+            print(request.POST.get(q.name))
+            print(q.answer)
             if q.answer == request.POST.get(q.name):
                 score += 50
                 correct += 1
