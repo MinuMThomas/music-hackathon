@@ -13,10 +13,11 @@
         </svg>
     </button>
     <ul class="nav  d-md-flex list-inline list-unstyled text-center">
-       {% if request.user.is_authenticated %}
+        {% if request.user.is_authenticated %}
         {% if request.user.is_superuser %}
         <li class="list-inline-item me-2">
-            <a class="text-decoration-none" href="https://8000-minumthomas-musichackat-9smbl50cnk4.ws-eu74.gitpod.io/admin">Management</a>
+            <a class="text-decoration-none"
+                href="https://8000-minumthomas-musichackat-9smbl50cnk4.ws-eu74.gitpod.io/admin">Management</a>
         </li>
         {% endif %}
 
@@ -33,14 +34,72 @@
     <!------------------------ off canvas menu ---------------------------->
 
     <div class="offcanvas offcanvas-bottom" id="offcanvasBottom" tabindex="-1" aria-labelledby="staticBackdropLabel">
-        <div class="offcanvas-header">
-            <!-- <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5> -->
-            <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+        <div class="offcanvas-header justify-content-center pt-5 mb-5">
+            {% if request.user.is_authenticated %}
+            <h5> <a href="{% url 'account_logout' %}" class="text-decoration-none nav-link fs-bold">Logout</a></h5>
+            {% else %}
+            <h5> <a href="{% url 'account_login' %}" class="text-decoration-none nav-link fs-bold">Login</a></h5>
+            {% endif %}
         </div>
-        <div class="offcanvas-body">
-            <!-- <div>
-                I will not close if you click outside of me.
-            </div> -->
+        <div class="offcanvas-body pt-5">
+            <div class="about-flex">
+                <div class="profile-box">
+                    <div class="profile">
+                        <img src="{{ MEDIA_URL }}T0L30B202-U01P0QM1ZEE-5562992d6df5-512.png" class="pro-img" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center pt-2">
+                        <i class="fa-brands fa-github fs-4 p-2"></i>
+                        <i class="fa-brands fa-linkedin fs-4 p-2"></i>
+                    </div>
+                </div>
+
+                <div class="profile-box">
+                    <div class="profile">
+                        <img src="{{ MEDIA_URL }}T0L30B202-U03HCKD5NFN-12eab299b034-512 (1).png" class="pro-img" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center pt-2">
+                        <i class="fa-brands fa-github fs-4 p-2"></i>
+                        <i class="fa-brands fa-linkedin fs-4 p-2"></i>
+                    </div>
+                </div>
+                <div class="profile-box">
+                    <div class="profile">
+                        <img src="{{ MEDIA_URL }}Sam.jpeg" class="pro-img" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center pt-2">
+                        <i class="fa-brands fa-github fs-4 p-2"></i>
+                        <i class="fa-brands fa-linkedin fs-4 p-2"></i>
+                    </div>
+                </div>
+                <div class="profile-box">
+                    <div class="profile">
+                        <img src="{{ MEDIA_URL }}Daniel.png" class="pro-img" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center pt-2">
+                        <i class="fa-brands fa-github fs-4 p-2"></i>
+                        <i class="fa-brands fa-linkedin fs-4 p-2"></i>
+                    </div>
+                </div>
+                <div class="profile-box">
+                    <div class="profile">
+                        <img src="{{ MEDIA_URL }}T0L30B202-U046HL5NNQZ-003f53a7686d-512.png" class="pro-img" alt="">
+
+                    </div>
+                    <div class="d-flex justify-content-center pt-2">
+                        <i class="fa-brands fa-github fs-4 p-2"></i>
+                        <i class="fa-brands fa-linkedin fs-4 p-2"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 px-4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Temporibus placeat cupiditate pariatur inventore optio fugiat deserunt consequatur quidem fuga
+                    modi, quaerat,
+                    molestias et dolorum iste consequuntur at aliquid laborum dolore? Inventore ipsam, fugit, velit
+                    maiores necessitatibus labore deleniti ipsa perspiciatis dolore ex delectus,
+                    minima saepe aliquam rem veniam doloremque quasi?
+                </p>
+            </div>
         </div>
     </div>
 

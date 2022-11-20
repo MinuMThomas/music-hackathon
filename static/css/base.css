@@ -20,7 +20,7 @@
   .offcanvas {
     height: 100vh  !important;
     background-color: #e6c315;
-    color: #FFF;
+    /* color: black; */
   }
 
 
@@ -106,4 +106,22 @@
 .btn-box {
   bottom: 10%;
   position: absolute;
+}
+/* -----------offcanvas flex style---------------------- */
+
+.about-flex {
+display: flex;
+justify-content: space-around
+}
+.profile {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  border-radius: 100%;
+  box-shadow: 3px 3px 3px #000;
+
+}
+.pro-img {
+  width: 100%;
+  border-radius: 100%;
 }
