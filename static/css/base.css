@@ -4,7 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    color: rgb(150, 11, 46);
+    /* color: rgb(150, 11, 46); */
 }
 /* -----------------------navbar styling------------------------ *
 /* new svg nav */
@@ -16,6 +16,11 @@
     display: flex;
     padding: 0;
     z-index: 9999999999;
+  }
+  .offcanvas {
+    height: 100vh  !important;
+    background-color: #e6c315;
+    /* color: black; */
   }
 
 
@@ -55,6 +60,7 @@
   }
 
 /* ---------------------Indexhtml Style----------------- */
+/* -----hero pages------- */
 
 .bg-yellow {
     background-color: #FFC600;
@@ -72,12 +78,58 @@
 .hero-div {
  height: 100vh;
  position: relative;
+ background-image: url("/media/Hero-pic.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 .headding {
     font-family: 'Rubik Distressed', cursive, sans-serif;
-    font-size: 100px;
-    color: brown;
+    /* font-size: 100px; */
+    font-size: clamp(4.8rem, 2.5vw, 5.1rem) !important;
+    color: rgb(19, 69, 131);
     margin: 50px;
+    text-shadow: 2px 2px #FFF;
 
+}
+.small-txt {
+  text-shadow: 1px 1px rgb(123, 74, 9);
+
+}
+/* p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  margin-left: 6.8rem;
+} */
+/* --------start button------ */
+.btn-box {
+  bottom: 10%;
+  position: absolute;
+}
+/* -----------offcanvas flex style---------------------- */
+
+.about-flex {
+display: flex;
+justify-content: space-around
+}
+.profile {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  border-radius: 100%;
+  box-shadow: 3px 3px 3px #000;
+
+}
+.pro-img {
+  width: 100%;
+  border-radius: 100%;
+}
+.pro-links {
+  color: black;
+  transition: 400ms;
+}
+.pro-links:hover {
+  color:white;
+  transition: 400ms;
 }
