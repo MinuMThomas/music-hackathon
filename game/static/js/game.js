@@ -18,7 +18,6 @@ var audio = document.getElementById('audioFile');
 var playBtn = document.getElementById('playButton')
 
 playBtn.addEventListener("click", function(){
-    clearTimeout(timeOut);
     setTimeout(function(){
         audio.play();
         
