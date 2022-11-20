@@ -34,7 +34,7 @@
     <!------------------------ off canvas menu ---------------------------->
 
     <div class="offcanvas offcanvas-bottom" id="offcanvasBottom" tabindex="-1" aria-labelledby="staticBackdropLabel">
-        <div class="offcanvas-header justify-content-center pt-5 mb-5">
+        <div class="offcanvas-header justify-content-center pt-5 mb-2">
             {% if request.user.is_authenticated %}
             <h5> <a href="{% url 'account_logout' %}" class="text-decoration-none nav-link fs-bold">Logout</a></h5>
             {% else %}
@@ -98,14 +98,24 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-8 col-lg-10 m-auto mt-4 px-4">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Temporibus placeat cupiditate pariatur inventore optio fugiat deserunt consequatur quidem fuga
-                    modi, quaerat,
-                    molestias et dolorum iste consequuntur at aliquid laborum dolore? Inventore ipsam, fugit, velit
-                    maiores necessitatibus labore deleniti ipsa perspiciatis dolore ex delectus,
-                    minima saepe aliquam rem veniam doloremque quasi?
-                </p>
+            <div class="col-12 col-md-8 col-lg-10 m-auto mt-4 px-4 text-center">
+                <h4><strong>About Us</strong></h4>
+                <div>
+                    <p>"There's only one way to succeed in anything, and that is to give it everything.""</p>
+                    <p>...Vince Lombardi</p>
+                    <P>This is a statement of gratitude to a fantastic development team. We had a plan when we started,
+                        and we were determined to see it through.</P>
+                    <p>...Anya McDonald</p>
+                    <P>This is a statement of gratitude to a fantastic development team. We had a plan when we started,
+                        and we were determined to see it through.</P>
+                    <p>...MinuMT</p>
+                    <P>This is a statement of gratitude to a fantastic development team. We had a plan when we started,
+                        and we were determined to see it through.</P>
+                    <p>...Samuel Ukachukukwu</p>
+                    <P>This is a statement of gratitude to a fantastic development team. We had a plan when we started,
+                        and we were determined to see it through.</P>
+                    <p>...Viktor Rura</p>
+                </div>
             </div>
         </div>
     </div>

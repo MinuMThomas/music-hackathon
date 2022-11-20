@@ -11,23 +11,22 @@
 <section class="container-fluid hero m-0 p-0 ">
   <div class="row m-0 p-0 ">
     <div class="col-12 col-md-10 col-lg-8 m-auto hero-div m-0 p-0 ">
-      <!-- <img src="" alt=""> -->
-      <div class="hero-text m-0 p-0">
-        <h1 class="headding m-0 text-center px-4">Clue the Music</h1>
-        <p class="fs-5 mt-4 text-white fw-bold small-txt text-center px-4">Have you got what it take to clue the music ?
-          Login to Play.
-        </p>
+      <div class="hero-text text-center m-0 p-0">
+        <h1 class="headding my-3 mx-0 text-center px-4">Clue the Music</h1>
+        {% if request.user.is_authenticated %}
+        <span class="play-btn p-3 bg-red rounded-2 mt-3">
+          <a href="{% url 'game' %}" class="btn play-btn bg-yellow rounded-2"><strong>PLAY GAME</strong></a>
+          <a class="text-decorations-none"  data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#"> <span class="border-0" data-bs-toggle="tooltip" data-bs-placement="right"
+              data-bs-title="GAME INSTRUCTIONS" ><i class="fa-regular fa-circle-question" ></i></span></a>
+          </span>
+        {% else %}
+        <p class="fs-5 mt-4 text-white fw-bold small-txt text-center px-4">Have you got what it take to clue the music ? Login to Play. </p>
+        {% endif %}
+
       </div>
-      <!-- <div class="btn-box">
-              <a href="game.html" class="btn-primary btn">start</a>
-              <a class="text-decorations-none"  data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#"> <span class="border-0" data-bs-toggle="tooltip" data-bs-placement="right"
-                  data-bs-title="GAME INSTRUCTIONS" ><i class="fa-regular fa-circle-question" ></i></span></a>
-          </div> -->
     </div>
   </div>
 </section>
-
-
 <!-- footer  -->
 {% include 'includes/footer.html' %}
 {% endblock %}
