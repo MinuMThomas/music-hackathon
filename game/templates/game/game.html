@@ -1,9 +1,14 @@
 {% extends "base.html" %}
 {% load static %}
+
 {% block extra_css %}
 <link rel="stylesheet" href="{% static '/css/game.css' %}">
 {% endblock %}
+
 {% block content %}
+<nav class="navbar">
+    {% include 'includes/main_nav.html' %}
+  </nav>
 <section class="container">
     <div class="row">
         <div class="col-6">
@@ -14,77 +19,75 @@
         </div>
     </div>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        {% for q in questions %}
         <div class="col">
-            <div class="card h-100">
-               <div class="p-3"><button>PLAY MUSIC</button></div>
-                <div class="card-body">
-                    <div class="d-flex justify-content-evenly mb-3">
-                        <button class="p-2">Clue 1</button>
-                        <button class="p-2">Clue 2</button>
+            <!-- add the class .flip  to the .card class here -->
+            <div class="card h-100 game-card">
+                <!-- card back  -->
+                <div class="card-back">
+                    <img class="question-img" src="{{ q.image.url }}">
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam atque laudantium nulla ea.
+                        Numquam eum accusamus cupiditate culpa qui quam ex quidem. Omnis voluptates possimus vero quos
+                        asperiores totam unde ipsam explicabo quasi. Veritatis, voluptatum qui. Veniam ad recusandae
+                        dicta quia quas harum tenetur alias. Culpa at enim similique. Assumenda!
                     </div>
-                    <form action="">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="answer" id="choice1">
-                            <label class="form-check-label" for="choice1">
-                                Default radio
-                            </label>
+                </div>
+
+                <!-- card front  -->
+                <div class="card-front">
+                    <audio id="audioFile" src="{{ q.audio_file.url }}" preload="auto"></audio>
+                    <div class="p-3">
+                        <button id="playButton" class="btn btn-info">PLAY MUSIC</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-evenly mb-3">
+
+                                <button id="clueOneButton" class="btn btn-info p-2">Clue 1</button>
+                                <p id="clueOne" class="hide">{{ q.clue1 }}</p>
+                                <button  id="clueTwoButton" class="btn btn-info p-2">Clue 2</button>
+                                <p id="clueTwo" class="hide">{{ q.clue2 }}</p>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="answer" id="choice2" checked>
-                            <label class="form-check-label" for="choice2">
-                                Default checked radio
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="answer" id="choice3">
-                            <label class="form-check-label" for="choice3">
-                                Default radio
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="answer" id="choice4">
-                            <label class="form-check-label" for="choice4">
-                                Default radio
-                            </label>
-                        </div>
-                        <div>
-                            <input type="submit" value="ANSWER">
-                        </div>
-                    </form>
+                        <form action="">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="answer" id="choice1">
+                                <label class="form-check-label" for="choice1">
+                                    {{ q.answer_option1 }}
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="answer" id="choice2">
+                                <label class="form-check-label" for="choice2">
+                                    {{ q.answer_option2 }}
+
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="answer" id="choice3">
+                                <label class="form-check-label" for="choice3">
+                                    {{ q.answer_option3 }}
+
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="answer" id="choice4">
+                                <label class="form-check-label" for="choice4">
+                                    {{ q.answer_option4 }}
+
+                                </label>
+                            </div>
+                            <div>
+                                <input class="btn btn-info p-2" type="submit" value="ANSWER">
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a short card.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                </div>
-            </div>
-        </div>
+        {% endfor %}
     </div>
 </section>
+
 <!-- <div class="container">
     <div class="row h-100">
         {% for q in questions %}
@@ -100,13 +103,17 @@
                     <button  id="clueTwoButton" class="btn btn-info">Clue 2</button>
                     <p id="clueTwo" class="hide">{{ q.clue2 }}</p>
                 </div>
+
                 <input type="text">
             </div>
         </div>
         {% endfor %}
     </div>
+
 </div> -->
+{% include 'includes/footer.html' %}
 {% endblock %}
+
 {% block postloadjs %}
 {{ block.super }}
 <script type="text/javascript" src="{% static '/js/game.js' %}"></script>
