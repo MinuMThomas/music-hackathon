@@ -25,6 +25,16 @@ Deployed website can be viewed [here]().
 
 
 ### User Stories
+As a player:
+- I want to be able to understand the aim of the game easily.
+- I want to easily navigate through the site.
+- I expect exciting, attractive and user friendly design.
+- I want to be able to login into my account, so that I can see my previous scores.
+- I want to hear an audio clip when I click the play button.
+- I want to be able to submit an answer.
+- I want to be able to reveal clues to help me guess the answer.
+- I want to be able to read about the developers of the game.
+- I want to be able to see my final score once the game is over.
 
 ## Scope Plane
 
@@ -33,19 +43,21 @@ Deployed website can be viewed [here]().
 - Game name is displayed and intro message
 - Easy navigation around the site allows for a positive user experience
 - Home page displays 'Login' and 'How to Play' buttons
-- 'How to Play' button opens a modal, which explains the aim of the game to the player
+- Question mark button opens a modal, which explains the aim of the game to the player
 - Login functionality allows users to login to play the game
 - Once users logged in, 'Start Game' button displayed, which allows users to play the game
+- Logout option displayed on hamburger menu
 - Play button for each question to play music
 - Clue buttons allow player to reveal a clue to help them guess the answer
-- Exit/ Home button displayed so players can leave the game at any time
 - At the end of the game, after 10 questions, the players score is diplayed
+- Exit/ Home button displayed so players can leave the game at any time
 
 ### **Features Left to Implement**
 - Logged in users are able to view a history of their score
 - Leaderboard displayed of the top 10 scores from all players
 - Clock countdown displayed per question to add a pressure element to the game
 - Additional levels added to allow players to play easy, medium or hard to test their musical ears.
+
 
 ## Structure Plane 
 
