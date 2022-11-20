@@ -1,12 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block content %}
 <!-- nav-bar -->
 <nav class="navbar fixed-top ">
   {% include 'includes/main_nav.html' %}
 </nav>
-
 <!-- Hero pages -->
 <section class="container-fluid hero m-0 p-0 ">
   <div class="row m-0 p-0 ">
@@ -22,7 +20,6 @@
         {% else %}
         <p class="fs-5 mt-4 text-white fw-bold small-txt text-center px-4">Have you got what it take to clue the music ? Login to Play. </p>
         {% endif %}
-
       </div>
     </div>
   </div>
@@ -30,7 +27,6 @@
 <!-- footer  -->
 {% include 'includes/footer.html' %}
 {% endblock %}
-
 {% block postloadjs %}
 {{block.super}}
 <script>
