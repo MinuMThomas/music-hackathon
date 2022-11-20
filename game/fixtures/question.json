@@ -1,0 +1,430 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "name": "Britney Spears - Toxic",
+            "image": "BritneySpears-Toxic.jpeg",
+            "audio_file": "media_audio/BritneySpears-Toxic.mp3",
+            "description":  "Toxic is a song recorded by American singer Britney Spears for her fourth studio album, In the Zone (2003). It was written and produced by Bloodshy & Avant, with additional writing from Cathy Dennis and Henrik Jonback. Released as the second single from In the Zone, the song was initially offered to Kylie Minogue for her album Body Language, but she turned it down. After trying to choose between '(I Got That) Boom Boom' and 'Outrageous' to be the second single, Spears selected 'Toxic' instead.",
+            "clue1": "American singer",
+            "clue2": "produced by Bloodshy & Avant",
+            "answer_option1": "Gimme More",
+            "answer_option2": "criminal",
+            "answer_option3": "circus",
+            "answer_option4": "Toxic",
+            "answer": "Toxic"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "name": "Coldplay - Yellow",
+            "image": "Coldplay-Yellow.jpeg",
+            "audio_file": "media_audio/Coldplay-Yellow.mp3",
+            "description":  "Yellow is a song by the British rock band Coldplay. The band wrote the song and co-produced it with British record producer Ken Nelson for their debut album, Parachutes (2000). The song was recorded in March 2000 and released on 26 June that same year as the second UK single from Parachutes, following "Shiver", and as the lead single in the United States.",
+            "clue1": "producer Ken Nelson ",
+            "clue2": "released on 26 June  2000",
+            "answer_option1": "The Scientist",
+            "answer_option2": "Yellow",
+            "answer_option3": "My Universe",
+            "answer_option4": "Don't Panic",
+            "answer": "Yellow"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "name": "Outkast - Hey Ya!",
+            "image": "Outkast-HeyYa.jpeg",
+            "audio_file": "media_audio/Outkast-HeyYa.mp3",
+            "description": "Hey Ya! is a popular song performed by American hip-hop duo Outkast, specifically group member André 3000, who wrote and produced the song. Along with "The Way You Move", recorded by Outkast's other member Big Boi, "Hey Ya!" was released by Arista Records as one of the two lead singles from the duo's fifth album, Speakerboxxx/The Love Below, on August 25, 2003. The track became a commercial success, reaching number one in the United States, Australia, Canada, the Czech Republic, Norway, and Sweden.",
+            "clue1": "American hip-hop duo",
+            "clue2": "released by Arista Records",
+            "answer_option1": "The Way You Move",
+            "answer_option2": "Breathe Again",
+            "answer_option3": "Hey Ya!",
+            "answer_option4": "She's Everything",
+            "answer": "Hey Ya!"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "name": "Ice Cube - You Can Do It",
+            "image": "IceCube-YouCanDo_It.jpeg",
+            "audio_file": "media_audio/IceCube-YouCanDo_It.mp3",
+            "description":  "You Can Do It is a hip-hop song by American rapper Ice Cube. It was released as the second single from the Next Friday soundtrack. The song features Ice Cube's Westside Connection bandmate Mack 10, as well as rapper Ms. Toi. "You Can Do It" later used as the lead single on Cube's sixth studio album, War & Peace Vol. 2 (The Peace Disc). The song also appears on his Greatest Hits and In the Movies compilations. It would also appear on the soundtrack for the film Save the Last Dance.",
+            "clue1": " hip-hop song",
+            "clue2": "American rapper",
+            "answer_option1": "Remember When",
+            "answer_option2": "Believe",
+            "answer_option3": "If This Isn't Love",
+            "answer_option4": "You Can Do It",
+            "answer": "You Can Do It"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "name": "Norah Jones - I Don't Know Why",
+            "image": "NorahJones-IDontKnowWhy.jpeg",
+            "audio_file": "media_audio/NorahJones-IDontKnowWhy.mp3",
+            "description":  "American singer and songwriter Norah Jones has released eight solo studio albums, seven collaborative studio albums, 4 compilation albums, five extended plays, 23 singles, and three live DVDs on Blue Note Records. Her most recent studio album, Pick Me Up Off the Floor, was released on June 12, 2020, through Blue Note Records.",
+            "clue1": "American singer and songwriter",
+            "clue2": "recent album, Pick Me Up Off the Floor",
+            "answer_option1": "I Look to You",
+            "answer_option2": "I Don't Know Why",
+            "answer_option3": "Believe",
+            "answer_option4": "My Universe",
+            "answer": "I Don't Know Why"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "name": "The Killers - Somebody Told Me",
+            "image": "TheKillers-SomebodyToldMe.jpeg",
+            "audio_file": "Currently: media_audio/TheKillers-SomebodyToldMe.mp3",
+            "description": "Somebody Told Me is a song by American rock band the Killers. It was released as the second official single from the group's debut studio album Hot Fuss (2004), and was written by band members Brandon Flowers, Mark Stoermer, Dave Keuning and Ronnie Vannucci Jr. In an interview with Rolling Stone, Brandon Flowers said: This is the story of trying to meet someone in a club. [3] It is written in the key of B-flat minor.",
+            "clue1": "American rock band ",
+            "clue2": "his is the story of trying to meet someone in a club.",
+            "answer_option1": "Somebody Told Me",
+            "answer_option2": "I Look to You",
+            "answer_option3": "Then",
+            "answer_option4": "Anything Like Me",
+            "answer": "Somebody Told Me"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "name": "Saves The Day - At Your Funeral",
+            "image": "SavesTheDay-AtYourFuneral.jpeg",
+            "audio_file": "media_audio/SavesTheDay-AtYourFuneral.mp3",
+            "description":  "Saves the Day is an American rock band from Princeton, New Jersey, formed in 1997. The band currently consists of lead vocalist and guitarist Chris Conley, guitarist Arun Bali, and bassist Rodrigo Palma.
+                            After forming under the name Sefler in 1994, Saves the Day released their debut studio album, Can't Slow Down, in 1998. It was followed by Through Being Cool (1999), which featured their first single, Shoulder to the Wheel",
+            "clue1": "Chris Conley",
+            "clue2": "rock band from Princeton",
+            "answer_option1": "American Saturday Night",
+            "answer_option2": "Giving Myself",
+            "answer_option3": "At Your Funeral",
+            "answer_option4": "Spotlight",
+            "answer": "At Your Funeral"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "name": "Bassment Jaxx - Do Your Thing",
+            "image": "BassmentJaxx-DoYourThing.jpeg",
+            "audio_file": "media_audio/BassmentJaxx-DoYourThing.mp3",
+            "description":  "Basement Jaxx are an English electronic music duo consisting of Felix Buxton and Simon Ratcliffe. The pair got their name from the regular club night they held in Brixton, London, UK. They first rose to popularity in the underground house scene of the mid-1990s, but would go on to find international chart success and win Best Dance Act at both the 2002 and 2004 BRIT Awards.",
+            "clue1": "music duo",
+            "clue2": "UK",
+            "answer_option1": "Do Your Thing",
+            "answer_option2": "It Must Be Love",
+            "answer_option3": "Dirty Laundry",
+            "answer_option4": "I Sure Can Smell the Rain",
+            "answer": "Do Your Thing"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "name": "Jakatta - American Dream",
+            "image": "Jakatta-AmericanDream.jpeg",
+            "audio_file": "media_audio/Jakatta-AmericanDream.mp3",
+            "description":  "American Dream is a song by English DJ Jakatta. The track samples two Thomas Newman pieces from the soundtrack for the 1999 film American Beauty: 'American Beauty' and Dead Already.[1] A spoken-word sample from "Two of Hearts" by Stacey Q also appears on the track.[2] The single peaked at No. 3 on the UK Singles Chart and also reached the top 40 in Belgium, Ireland, and Spain. A remix of the song was released in mid-2001 and peaked at No. 63 in the UK.",
+            "clue1": "by English DJ",
+            "clue2": "remix of the song was released in mid-2001",
+            "answer_option1": "The Way I Am",
+            "answer_option2": "Whiskey Lullaby",
+            "answer_option3": "Breathe Again",
+            "answer_option4": "American Dream",
+            "answer": "American Dream"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "name": "Ozone - Dragostea Din Tei",
+            "image": " Ozone-DragosteaDinTei.jpeg",
+            "audio_file": "media_audio/Ozone-DragosteaDinTei.mp3",
+            "description":  "Radu Sîrbu (also known as Radu Sârbu, RadU, Picasso and Radu Alexeevici Sîrbu (Russian: Раду Алексеевич Сырбу, romanized: Radu Alekseevich Syrbu; born 14 December 1978 in Peresecina) is a Moldovan singer and music producer. He was part of the pop music trio O-Zone whom received international success for their single Dragostea Din Tei. He currently lives and works in Bucharest, Romania.",
+            "clue1": "Moldovan singer ",
+            "clue2": "part of the pop music trio",
+            "answer_option1": "Get Low",
+            "answer_option2": "Paper Planes",
+            "answer_option3": "Dragostea Din Tei",
+            "answer_option4": "Juicy",
+            "answer": "Dragostea Din Tei"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "name": "Busted - You Said No",
+            "image": "Busted-YouSaidNo.jpeg",
+            "audio_file": "media_audio/Busted-YouSaidNo.mp3",
+            "description":  "You Said No (also known by its original title, "Crash and Burn") is a song by English pop punk band Busted. It was released on 21 April 2003 as the third single from their debut studio album, Busted (2002). The song was written by band members James Bourne, and Charlie Simpson, and was produced by Robson and Graham Stewart. "You Said No" became Busted's first song to reach number one on the UK Singles Chart.",
+            "clue1": "Crash and Burn",
+            "clue2": "English pop punk band",
+            "answer_option1": "Hot in Herre",
+            "answer_option2": "Its Going Down",
+            "answer_option3": "You Said No",
+            "answer_option4": "Lip Gloss",
+            "answer": "You Said No"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "name": "Christina Aguilera - Beautiful",
+            "image": "Christina-AguileraBeautiful.jpeg",
+            "audio_file": "media_audio/Christina-AguileraBeautiful.mp3",
+            "description":  "Beautiful is a song recorded by American singer Christina Aguilera for her fourth studio album, Stripped (2002). It was released as the album's second single on November 16, 2002. A pop and R&B ballad, "Beautiful" was written and produced by Linda Perry. Lyrically, it discusses inner-beauty, as well as self-esteem and insecurity. Aguilera commented that she put "her heart and her soul" into the track, which she felt represented the theme of Stripped.",
+            "clue1": "",
+            "clue2": "",
+            "answer_option1": "Beautiful",
+            "answer_option2": "All Falls Down",
+            "answer_option3": "In Da Club",
+            "answer_option4": "Drop It Like Its Hot",
+            "answer": "Beautiful"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "name": "Kylie - ComeInto My World",
+            "image": "Kylie-ComeIntoMyWorld.jpeg",
+            "audio_file": "media_audio/Kylie-ComeIntoMyWorld.mp3",
+            "description": "Come into My World is a song recorded by Australian singer Kylie Minogue for her eighth studio album, Fever (2001). Written and produced by Cathy Dennis and Rob Davis, 'Come into My World' is a dance-pop song in which the singer pleads to her lover to come into her world. 'Come into My World' was released as the fourth and final, and third North American single from Fever on 4 November 2002.",
+            "clue1": "Australian singer",
+            "clue2": "dance-pop song",
+            "answer_option1": "Hot In Herre",
+            "answer_option2": "Get Low",
+            "answer_option3": "Gravel Pit",
+            "answer_option4": "ComeInto My World",
+            "answer": "ComeInto My World"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "name": "Moby - Natural Blues",
+            "image": "Moby-NaturalBlues.jpeg",
+            "audio_file": "media_audio/Moby-NaturalBlues.mp3",
+            "description":  "Natural Blues is a song by American electronic musician Moby. It was released on March 6, 2000 as the fifth single from his fifth studio album, Play (1999). The song is built around vocals sampled from "Trouble So Hard" by American folk singer Vera Hall (1937). "Natural Blues" was one of several songs on Play produced by Moby based on samples obtained from albums of American folk music originally compiled by field collector Alan Lomax.",
+            "clue1": "American electronic musician",
+            "clue2": "released in 2000",
+            "answer_option1": "Lose Yourself",
+            "answer_option2": "Moby - Natural Blues",
+            "answer_option3": "Ether",
+            "answer_option4": "Touch The Sky",
+            "answer": "Moby - Natural Blues"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "name": "Mis-Teeq - Scandalous",
+            "image": "Mis-Teeq-Scandalous.jpeg",
+            "audio_file": "media_audio/Mis-Teeq-Scandalous.mp3",
+            "description":  "Scandalous is a song by British girl group Mis-Teeq. It was composed by band members Su-Elise Nash, Alesha Dixon, and Sabrina Washington along with frequent collaborators Hallgeir Rustan, Tor Erik Hermansen, and Mikkel Eriksen for their second studio album, Eye Candy (2003), with production handled by the latter two under their production moniker StarGate. Written in the key of C minor, "Scandalous" is an up-tempo R&B song with a heavy bassline, strings, a siren sound, and suggestive lyrics.",
+            "clue1": "British girl group",
+            "clue2": "Alesha Dixon",
+            "answer_option1": "Scandalous",
+            "answer_option2": "Still Tippin",
+            "answer_option3": "Royal Flush",
+            "answer_option4": "The Way I Am",
+            "answer": "Scandalous"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "name": "Kelis - Milkshake",
+            "image": "Kelis-Milkshake.jpeg",
+            "audio_file": "media_audio/Kelis-Milkshake.mp3",
+            "description":  "Milkshake is a song by American singer Kelis from her third studio album, Tasty (2003). Written and produced by the Neptunes, the song was originally offered to Britney Spears for her fourth studio album, In the Zone, but was instead given to Kelis. It was released as the lead single from Tasty in the United States on August 25, 2003, by Star Trak and Arista Records, and internationally on November 24, 2003. According to Kelis, "milkshake" in the song is used as a metaphor for 'something that makes women special'.",
+            "clue1": "American singer",
+            "clue2": "released-2003",
+            "answer_option1": "Get Ur Freak On",
+            "answer_option2": "Milkshake",
+            "answer_option3": "Stan",
+            "answer_option4": "Exhibit C",
+            "answer": "Milkshake"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+            "name": "Avril Lavigne - My Happy Ending",
+            "image": "AvrilLavigne-MyHappyEnding.jpeg",
+            "audio_file": "media_audio/AvrilLavigne-MyHappyEnding.mp3",
+            "description":  "My Happy Ending is a song by Canadian singer-songwriter Avril Lavigne, written by herself and Butch Walker for her second studio album, Under My Skin (2004). Structurally, the song is written in 4/4 style and has a repeated hook in both the chorus and in the intro and outro.
+                            My Happy Ending was released as the album's second single in June 2004, becoming a top-five hit in Canada, the Czech Republic, and the United Kingdom while reaching the top 10 in seven other countries.",
+            "clue1": "Canadian singer",
+            "clue2": "top-five hit in Canada-2004",
+            "answer_option1": "Southern Hospitality",
+            "answer_option2": "Hey Ya!",
+            "answer_option3": "My Happy Ending",
+            "answer_option4": "I Hate My Job",
+            "answer": "My Happy Ending"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "products.product",
+        "fields": {
+            "name": "Fat Boy Slim - Long Way From Home",
+            "image": " FatBoySlim-LongWayFromHome.jpeg",
+            "audio_file": "media_audio/FatBoySlim-LongWayFromHome.mp3",
+            "description":  "Norman Quentin Cook (born Quentin Leo Cook, 31 July 1963), also known by his stage name Fatboy Slim, is an English musician, DJ, and record producer who helped to popularise the big beat genre in the 1990s. In the 1980s, Cook was the bassist for the Hull-based indie rock band the Housemartins, who achieved a UK number-one single with their a cappella cover of "Caravan of Love". After the Housemartins split up, Cook formed the electronic band Beats International in Brighton, who produced the number-one single Dub Be Good to Me.",
+            "clue1": "English musician, DJ",
+            "clue2": "Norman Quentin Cook",
+            "answer_option1": "Hip-Hop",
+            "answer_option2": "Black President",
+            "answer_option3": "Long Way From Home",
+            "answer_option4": "Big Pimpin",
+            "answer": "Long Way From Home"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "products.product",
+        "fields": {
+            "name": "Arctic Monkeys - Mardy Bum",
+            "image": "ArcticMonkeys-MardyBum.jpeg",
+            "audio_file": "media_audio/ArcticMonkeys-MardyBum.mp3",
+            "description":  "English rock band Arctic Monkeys have released 7 studio albums, 5 extended plays (EPs) and 23 singles. Formed in 2002 by guitarist and vocalist Alex Turner, guitarist and backing vocalist Jamie Cook, bass guitarist and backing vocalist Andy Nicholson and drummer and backing vocalist Matt Helders, Arctic Monkeys released their first EP, Five Minutes with Arctic Monkeys, in May 2005, and signed with London-based Domino Recording Company in June.",
+            "clue1": "English rock band",
+            "clue2": "vocalist Alex Turner,",
+            "answer_option1": "On My Block",
+            "answer_option2": "Long Way From Home",
+            "answer_option3": "Mardy Bum",
+            "answer_option4": "Bad Boy For Life",
+            "answer": "Mardy Bum"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "products.product",
+        "fields": {
+            "name": "Shakira, Wyclef Jean - Hips Don't Lie",
+            "image": "ShakiraWyclefJean-HipsDontLie.jpeg",
+            "audio_file": "media_audio/ShakiraWyclefJean-HipsDontLie.mp3",
+            "description": "Hips Don't Lie is a Latin pop and reggaeton song by Colombian singer-songwriter Shakira, featuring Haitian rapper Wyclef Jean, released by Epic Records in 2006 as the second single from the reissue of Shakira's seventh studio album, Oral Fixation, Vol. 2. The song was written by Shakira, Jean, Jerry Duplessis, Omar Alfanno and LaTavia Parker, and produced by Shakira, Jean and Duplessis.",
+            "clue1": "Latin pop",
+            "clue2": "Colombian singer",
+            "answer_option1": "Tipsy",
+            "answer_option2": "Right Thurr",
+            "answer_option3": "Hips Don't Lie",
+            "answer_option4": "Tell Me When To Go",
+            "answer": "Hips Don't Lie"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "products.product",
+        "fields": {
+            "name": "Michael Buble - I Just Haven't Met You Yet",
+            "image": "MichaelBuble-IJustHaventMetYouYet.jpeg",
+            "audio_file": "media_audio/MichaelBuble-IJustHaventMetYouYet.mp3",
+            "description":  "Haven't Met You Yet is the first single from Canadian singer Michael Bublé's fourth studio album, Crazy Love, released on August 31, 2009. According to Bublé, the single and its official music video are 'about everyone's dream of finding a relationship and love.' Bublé co-wrote 'Haven't Met You Yet' with Alan Chang and Amy Foster-Gillies, and dedicated it to his wife, Luisana Lopilato (who appears as his love interest in the music video).",
+            "clue1": "Canadian singer ",
+            "clue2": "released-2009",
+            "answer_option1": "Slow Jamz",
+            "answer_option2": "Hot In Herre",
+            "answer_option3": "Freek-A-Leek",
+            "answer_option4": "I Just Haven't Met You Yet",
+            "answer": "I Just Haven't Met You Yet"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "products.product",
+        "fields": {
+            "name": "Wizard - I Wish It Could Be Christmas Everyday",
+            "image": "Wizard-IWishItCouldBeChristmasEveryday.jpeg",
+            "audio_file": "media_audio/Wizard-IWishItCouldBeChristmasEveryday.mp3",
+            "description":  "Christmas music comprises a variety of genres of music regularly performed or heard around the Christmas season. Music associated with Christmas may be purely instrumental, or, in the case of carols or songs, may employ lyrics whose subject matter ranges from the nativity of Jesus Christ, to gift-giving and merrymaking, to cultural figures such as Santa Claus, among other topics. Many songs simply have a winter or seasonal theme, or have been adopted into the canon for other reasons.",
+            "clue1": "Christmas music  ",
+            "clue2": "Wizard",
+            "answer_option1": "Best I Ever Had",
+            "answer_option2": "Hot In Herre",
+            "answer_option3": "I Wish It Could Be Christmas Everyday",
+            "answer_option4": "Right Thurr",
+            "answer": "I Wish It Could Be Christmas Everyday"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "products.product",
+        "fields": {
+            "name": "George Michael (Wham) - Last Christmas",
+            "image": "GeorgeMichaelWham-LastChristmas.jpeg",
+            "audio_file": "media_audio/GeorgeMichaelWham-LastChristmas.mp3",
+            "description":  "Last Christmas is a song by British pop duo Wham!, originally released in December 1984 on CBS Records internationally and as a double A-side on Epic Records with "Everything She Wants" in the UK. Described as a "high watermark of mid-80s British synthpop songcraft", it was written and produced by George Michael, and has been covered by many artists since its original release. ",
+            "clue1":"British pop duo",
+            "clue2": "released-1984",
+            "answer_option1": "Last Christmas",
+            "answer_option2": "All I Want For Christmas Is You",
+            "answer_option3": "White Christmas",
+            "answer_option4": "Christmas Wrapping",
+            "answer": "Last Christmas"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "products.product",
+        "fields": {
+            "name": "Frank Sinatra - Santa Claus is Coming to Town",
+            "image": "Currently: FrankSinatra-SantaClausisComingtoTown.jpeg",
+            "audio_file": "Currently: media_audio/FrankSinatra-SantaClausisComingtoTown.mp3",
+            "description":  "Santa Claus Is Coming to Town is a Christmas song written by J. Fred Coots and Haven Gillespie. The earliest known recorded version of the song was by banjoist Harry Reser and his band on October 24, 1934. It was then sung on Eddie Cantor's radio show in November 1934. This version became an instant hit with orders for 500,000 copies of sheet music and more than 30,000 records sold within 24 hours.",
+            "clue1": "Canadian singer ",
+            "clue2": "released-2009",
+            "answer_option1": "Do They Know Its Christmas?",
+            "answer_option2": "Rocking Around the Christmas Tree",
+            "answer_option3": "Santa Claus is Coming to Town",
+            "answer_option4": "Merry Christmas Baby",
+            "answer": "Santa Claus is Coming to Town"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "products.product",
+        "fields": {
+            "name": "Lady Gaga & Ariana Grande - Rain On Me",
+            "image": "LadyGagaArianaGrande-RainOnMe.jpeg",
+            "audio_file": "media_audio/LadyGagaArianaGrande-RainOnMe.mp3",
+            "description":  "Rain on Me is a song by American singers Lady Gaga and Ariana Grande, from Gaga's sixth studio album, Chromatica (2020). It was written by Gaga, Grande, Nija Charles, Rami Yacoub, Tchami, Boys Noize and its producers BloodPop and Burns. An upbeat house, dance-pop, electropop and disco song, the song features a synth-disco beat and funk guitars. Described by Gaga as a "celebration of tears", the track explores resilience in defiance of the hardships in life.",
+            "clue1": "American singers",
+            "clue2": "released-2020",
+            "answer_option1": "Lean Back",
+            "answer_option2": "Always On Time",
+            "answer_option3": "Slow Jamz",
+            "answer_option4": "Rain On Me",
+            "answer": "Rain On Me"
+        }
+    }
+    
+]
