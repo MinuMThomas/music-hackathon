@@ -9,8 +9,6 @@ class Question(models.Model):
     description = models.TextField(max_length=550)
     clue1 = models.CharField(max_length=200)
     clue2 = models.CharField(max_length=200)
-    clue3 = models.CharField(max_length=200)
-    clue4 = models.CharField(max_length=200)
     answer_option1 = models.CharField(max_length=200)
     answer_option2 = models.CharField(max_length=200)
     answer_option3 = models.CharField(max_length=200)
