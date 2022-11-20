@@ -17,9 +17,9 @@
 }
 
 /* add class flip here replace game-card class */
-.game-card:hover {
+/* .game-card:hover {
     transform: rotateY(180deg);
-}
+} */
 
 .card-back {
     position: absolute;
