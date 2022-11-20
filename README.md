@@ -10,6 +10,7 @@ Deployed website can be viewed [here]().
 
 ## Project Goals
 
+'Clue the Music' has been developed as part of the Code Institute Hackathon Hero: A music themed game creation challenge. This is a Django based project with a sqlite database, alongside HTML, CSS and JavaScript. We worked together to create something fun for people to play! 
 
 ## UX Design
 
@@ -59,6 +60,7 @@ Deployed website can be viewed [here]().
 ### Colour Scheme
 
 ### Images
+Images were chosen from album covers to give a visual prompt for players and add to the overall aethestic of the game. 
 
 ### Typography
 
@@ -127,6 +129,9 @@ For more information on troubleshooting see the GitHub documentation [here](http
 
 
 ### Code Content
+- [Stack Overflow](https://stackoverflow.com/questions/22766719/stop-audio-after-x-seconds-in-js) used in JavaScript to play audio files
+- [Stack Overflow](https://stackoverflow.com/questions/27474321/how-to-shuffle-list-in-django-views-py) used in shuffling songs
+
 
 
 
