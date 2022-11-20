@@ -74,18 +74,21 @@
   background-color: #FFC600;
 }
 
-.bg-red{
+.bg-red {
   background-color: #ff6c10;
 }
+
 .hero {
   /* height: 100vh; */
   position: relative;
 }
-.hero-2{
+
+.hero-2 {
   width: 100%;
   position: absolute;
   overflow: hidden;
 }
+
 .hero-text {
   position: absolute;
   bottom: 45%;
@@ -108,8 +111,6 @@
   z-index: -1;
 }
 
-
-
 .hero-div {
   height: 100vh;
   position: relative;
@@ -129,25 +130,16 @@
   text-shadow: 2px 2px #FFF;
 
 }
+
 .small-txt {
   text-shadow: 1px 1px rgb(123, 74, 9);
 }
-.play-btn{
+
+.play-btn {
   box-shadow: 1px 1px 2px rgb(123, 74, 9);
 }
-/* p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  margin-left: 6.8rem;
-} */
-/* --------start button------ */
-/* .btn-box {
-  bottom: 10%;
-  position: absolute;
-} */
 
 /* -----------offcanvas flex style---------------------- */
-
 .about-flex {
   display: flex;
   justify-content: space-around;
@@ -184,4 +176,58 @@
     height: 150px;
     width: 150px;
   }
+}
+
+/* allauth page styling */
+.allauth-container {
+  height: 100vh;
+}
+
+
+.allauth-form-inner-content input {
+  width: 80%;
+  margin: auto;
+  box-sizing: border-box;
+  border: 1px solid #ff6c10;
+  border-radius: 0px;
+  background-color: #fff;
+  padding: 10px 12px;
+  box-shadow: 0 1px 3px 0 rgb(123, 74, 9);
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.allauth-form-inner-content input[type='checkbox'] {
+  width: 3px;
+  margin: auto;
+
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+  font-weight: bold;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #fff !important;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #ff6c10 !important;
+  border: 1px solid #ff6c10;
+  padding: .398rem .75rem .355rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  border-radius: 0;
+  box-shadow: 0 1px 3px 0 #6a6a92;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+  transition: 300ms ease;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {
+  color: red !important;
+  background-color: #cfb520 !important;
 }
