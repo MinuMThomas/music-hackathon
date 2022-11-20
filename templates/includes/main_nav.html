@@ -26,7 +26,7 @@
         </li>
         {% else %}
         <li class="list-inline-item me-2">
-            <a class="nav-link" href="{% url 'account_login' %}">Login ???</a>
+            <a class="nav-link fs-bold" href="{% url 'account_login' %}">Login</a>
         </li>
         {% endif %}
     </ul>
@@ -42,7 +42,8 @@
             {% endif %}
         </div>
         <div class="offcanvas-body pt-5">
-            <div class="about-flex">
+
+            <div class="col-12 col-md-9 col-lg-10 m-auto about-flex">
                 <div class="profile-box">
                     <div class="profile">
                         <img src="{{ MEDIA_URL }}Anya.png" class="pro-img" alt="">
@@ -97,7 +98,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-4 px-4">
+            <div class="col-12 col-md-8 col-lg-10 m-auto mt-4 px-4">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Temporibus placeat cupiditate pariatur inventore optio fugiat deserunt consequatur quidem fuga
                     modi, quaerat,
