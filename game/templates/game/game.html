@@ -2,34 +2,119 @@
 {% load static %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static '/css/game.css' %}">
+<link rel="stylesheet" href="{% static '/css/game.css' %}">
 {% endblock %}
 
 {% block content %}
+<nav class="navbar">
+    {% include 'includes/main_nav.html' %}
+</nav>
+<section class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h2>Can you Clue the Music?</h2>
+        </div>
+        <div class="col-12 col-md-6">
+            <h2 class="text-end">Score: {{ score }}</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <!-- card front  -->
+            <form action="" method="post">
+                {% csrf_token %}
+                <div class="row">
+                {% for q in questions %}
 
-<div class="container">
+                    <div class="col-sm-6 col-md-3 mt-4">
+                        <div class="card h-100 game-card">
+                            <div class="card-front">
+                                <audio id="audioFile" src="{{ q.audio_file.url }}" preload="auto"></audio>
+                                <div class="p-3">
+                                    <button id="playButton" class="btn btn-info btn-game">PLAY MUSIC</button>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-evenly mb-3">
+
+                                        <button id="clueOneButton" class="btn btn-info p-2">Clue 1</button>
+                                        <p id="clueOne" class="hide">{{ q.clue1 }}</p>
+                                        <button id="clueTwoButton" class="btn btn-info p-2">Clue 2</button>
+                                        <p id="clueTwo" class="hide">{{ q.clue2 }}</p>
+                                    </div>
+                                    <div class="my-2">
+                                        <div class="form-group">
+                                            <label class="hide" for="question">{{q.name}}</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="{{ q.name}}" id="choice1" value="{{ q.answer_option1 }}">
+                                            <label class="form-check-label" for="choice1">
+                                                {{ q.answer_option1 }}
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="{{ q.name }}" id="choice2" value="{{ q.answer_option2 }}">
+                                            <label class="form-check-label" for="choice2">
+                                                {{ q.answer_option2 }}
+
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="{{ q.name }}" id="choice3" value="{{ q.answer_option3 }}">
+                                            <label class="form-check-label" for="choice3">
+                                                {{ q.answer_option3 }}
+
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="{{ q.name }}" id="choice4" value="{{ q.answer_option4 }}">
+                                            <label class="form-check-label" for="choice4">
+                                                {{ q.answer_option4 }}
+
+                                            </label>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 mt-2">
+                        <input class="btn btn-info p-2" type="submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- <div class="container">
     <div class="row h-100">
         {% for q in questions %}
         <div class="col-3 text-center">
             <div>
                 <h1>Can you Clue the Music?</h1>
                 <img src="{{ q.image.url }}">
-                <button class="btn btn-info">Play me</button>
-                
+                <audio id="audioFile" src="{{ q.audio_file.url }}" preload="auto"></audio>
+                <button id="playButton" class="btn btn-info">Play</button>
                 <div>
                     <button id="clueOneButton" class="btn btn-info">Clue 1</button>
                     <p id="clueOne" class="hide">{{ q.clue1 }}</p>
                     <button  id="clueTwoButton" class="btn btn-info">Clue 2</button>
                     <p id="clueTwo" class="hide">{{ q.clue2 }}</p>
                 </div>
-                
+
                 <input type="text">
             </div>
         </div>
         {% endfor %}
     </div>
-   
-</div>
+
+</div> -->
+{% include 'includes/footer.html' %}
 {% endblock %}
 
 {% block postloadjs %}
