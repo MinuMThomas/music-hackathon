@@ -67,6 +67,11 @@ As a player:
 
 ### Wireframes
 
+![alt wireframes](../music-hackathon/media/readme_img/Screenshot%202022-11-20%20190701.png)
+![alt wireframes](../music-hackathon/media/readme_img/Screenshot%202022-11-20%20190722.png)
+![alt wireframes](../music-hackathon/media/readme_img/Screenshot%202022-11-20%20190740.png)
+![alt wireframes](../music-hackathon/media/readme_img/Screenshot%202022-11-20%20190820.png)
+
 ## Surface Plane
 
 ### Colour Scheme
