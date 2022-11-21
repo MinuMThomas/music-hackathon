@@ -121,7 +121,8 @@ For more information on troubleshooting see the GitHub documentation [here](http
 
 
 ## Credits
-
+- Our audio files was downloaded from the [colmanweb.co.uk](https://www.colmanweb.co.uk/guessthetunes/index.htm) web site.
+- The pictures we got from [youtube](https://www.youtube.com/) and [soundcloud](https://soundcloud.com/).
 ### Content
 - README structure and basic layout used from [Surf the Wave](https://github.com/anyahush/surf-the-wave).
 
